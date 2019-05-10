@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
 @Component({
   selector: 'app-html-to-pdf',
   templateUrl: './html-to-pdf.component.html',
-  styleUrls: ['./html-to-pdf.component.css']
+  styleUrls: ['./html-to-pdf.component.scss']
 })
 export class HtmlToPdfComponent implements OnInit {
 
@@ -72,7 +72,7 @@ export class HtmlToPdfComponent implements OnInit {
 
   footer(doc, pageNumber, totalPages, margins = this.margins) {
 
-    const str = 'Page ' + pageNumber + ' of ' + totalPages + ' By Raj K.';
+    const str = 'Page ' + pageNumber + ' of ' + totalPages + ' By Leonel E.';
 
     doc.setFontSize(10);
     doc.text(str, margins.left, doc.internal.pageSize.height - 20);
